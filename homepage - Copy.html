@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+function showdiv()
+{
+document.getElementById("Title").style.visibility="visible";
+}
+setTimeout("showdiv()",4000);
+</script>
+
+<style>
+
+.topnav {
+margin-left: 800px;
+background:color: seashell;}
+
+.contact{
+background-color: seashell;
+border: none;}
+
+
+
+body{
+margin-top: 0px;
+height: 100vh;
+ background-color:seashell; 
+font-family: inherit;
+}
+
+.dropdown button {
+font-family: inherit;
+font-size : 25px;}
+
+
+nav{ 
+background-color:seashell;
+}
+
+
+
+.dropdown { 
+height :10vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "30sp";
+width : 80%;
+margin: auto;
+}
+
+.projects, 
+.products, .extra {
+position:relative; 
+}
+
+
+.projects ul, .products ul, .extra ul, .ascolta ul, .dialetti ul{
+
+position : absolute; 
+margin-left: -60px;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+
+
+
+
+
+
+.projects a, 
+.products a, .extra a, .home a, .dialetti a , .ascolta a{
+color: green;
+text-decoration: none;}
+
+.projects li, .products li, .extra li, .ascolta li, .dialetti li{
+width: 150%;
+height : 30%;
+background-color: seashell ;
+box-sizing:border-box;
+algin-items: center;
+ list-style-position:inside;
+ border: 1px solid black;
+}
+
+.projects li:hover, .products li:hover, .extra li:hover, .ascolta li:hover, .dialetti li:hover{
+background-color : red;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown button{
+background :none;
+border: none;
+color: green;
+text-decoration : none;}
+
+.projects button:hover + ul, .products button:focus + ul, .extra button:focus + ul, .ascolta button:focus + ul, .dialetti button:focus + ul{
+opacity : 1;
+pointer-events: all;}
+
+
+
+
+
+body{
+background-color:seashell;}
+
+.Title{
+margin-top: 500px;  
+color: green;
+font-family: inherit;
+height :300px;
+font-family: inherit;
+font-size : 25px;
+text-align: center;
+background-color : seashell;
+justify-content: space-around;
+box-sizing:border-box;
+border-radius: 20px;
+font-size : 25px;
+text-align: center;
+}
+
+.Title2{ 
+margin-top: -100px 
+color: green;
+font-family: inherit;
+height :300px;
+font-family: inherit;
+font-size : 25px;
+text-align: center;
+background-color : seashell;
+justify-content: space-around;
+box-sizing:border-box;
+border-radius: 20px;
+font-size : 25px;
+text-align: center;
+}
+
+.Title3{  
+margin-top: -100px;
+color: green;
+font-family: inherit;
+height :300px;
+font-family: inherit;
+font-size : 25px;
+text-align: center;
+background-color : seashell;
+justify-content: space-around;
+box-sizing:border-box;
+border-radius: 20px;
+font-size : 25px;
+text-align: center;
+}
+
+.container {
+text-align: center;
+position: absolute;
+top: 250px;
+left: 130px;
+transform: translate (-30%, -30%);
+width: 75%;
+}
+
+.container span{
+color: green;
+text-tranform: uppercase;
+display: block;}
+
+.text1{
+
+font-size: 60px;
+font-weight: 700;
+letter-spacing: 8px;
+margin-bottom: 20px;
+background: seashell;
+position: relative;
+animation: text 5s 1;
+}
+
+.text2{
+font-size: 30px;
+letter-spacing: 5px;
+animation: text2 8s 1;
+
+}
+
+
+
+
+
+
+@keyframes text{
+0% { 
+
+color: red;
+margin-bottom :- 40px;
+}
+30% {
+color: white;
+letter-spacing: 25px;
+margin-bottom: -40px;
+}
+85%
+color: green;
+letter-spacing : 8px;
+margin-bottom-40px;}
+
+@keyframes text2 {
+0% { 
+
+color: red;
+margin:-bottom -20px;
+}
+30% {
+color: white;
+letter-spacing: 10px;
+margin-bottom: -20px;
+}
+85%
+color: green;
+letter-spacing : 4px;
+margin-bottom-40px;}
+}
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+<div class ="topnav">
+
+<div>
+<button class= "contact">Lavora con noi</button>
+<button class= "contact">Contact us</button>
+<input class = "search-text" type="text" placeholder="Search..">
+
+<button  > Go </button>
+
+
+</div>
+
+</div>
+
+
+
+  <nav>
+
+    <div class="dropdown">
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "projects">
+            <button> Guarda </button>
+            <ul>   
+            <li><a href="file:///C:/Users/Odoo/Documents/sito/video.html"> Video divertenti</a></li>
+            <li><a href="#"> Video motivazionali</a></li>
+            <li><a href="#"> Video seri</a></li>
+            </ul>
+  </div>
+         
+
+<div class= "extra">
+            <button> Leggi </button>
+            <ul>   
+            <li><a href="file:///C:/Users/Odoo/Documents/sito/leggi.html">Tutto da leggere </a></li>
+            <li><a href="#"> Storie interessanti</a></li>
+            <li><a href="#"> Storie interessanti</a></li>
+          
+            </ul>
+</div>
+
+   <div class= "ascolta">
+            <button> Ascolta </button>
+            <ul>   
+            <li><a href= "#"> Ascolta bene</a></li>
+            <li><a href="#"> Ascolta meglio</a></li>
+            <li><a href="#"> E sientm</a></li>
+            </ul>
+
+</div>
+   <div class= "dialetti">
+            <button> Dialetti  </button>
+            <ul>   
+            <li><a href= "#"> Chi siamo</a></li>
+            <li><a href="#"> Contattaci</a></li>
+            <li><a href="#"> Lavora con noi</a></li>
+            </ul>
+</div>
+
+   <div class= "products">
+            <button> About us </button>
+            <ul>   
+            <li><a href= "file:///C:/Users/Odoo/Documents/sito/chisiamo%20-%20Copy.html"> Chi siamo</a></li>
+            <li><a href="#"> Contattaci</a></li>
+            <li><a href="#"> Lavora con noi</a></li>
+            </ul>
+</div>
+</div>
+</nav>
+
+<hr>
+ 
+<div class = "container">
+<span class= "text1"> Enjoy Italiano </span> 
+<span class= "text2">Rilassati... sei in Italia! </span> 
+<div id="scopri" >
+
+</div>
+
+
+</div>
+<div id= "Title" style= "visibility: hidden; margin-left:-70px;">
+<div class= "Title">
+  
+<button style="background-color: green ; opacity: 0.5; color: white;font-family: inherit;margin-left: -150px; font-style: bold;borders: none; font-size:40px; border-radius: 25px; width: 1000px; height: 200px">Enjoy Video 
+<div style= "font-size: 20px"> "A seconda dei tuoi interessi puoi imparare l'italiano guardando video divertenti, culturali, storici e tanti altri" </div></button>
+<div>    
+
+</div>
+</div>
+<div class= "Title2">
+  
+<button style="background-color:white; opacity: 0.5; color: green;font-family: inherit; margin-left: -150px;  borders: none; margin-top: -50px; font-size:40px; border-radius: 25px; width: 1000px; height: 200px">Enjoy Reading 
+<div style= "font-size: 20px"> "Immergiti in una serie di letture interessanti che riguardano l'italia e la sua cultura, il tuo livello di writing and reading salirà alle stelle" </div></button>
+<div>    
+
+
+</div>
+
+</div>
+<div class  = "Title3">
+  
+<button style="background-color:red ; opacity: 0.5; color: white;font-family: inherit; margin-left: -150px;borders: none; font-size:40px; border-radius: 25px; width: 1000px; height: 200px">Enjoy Listening 
+<div style= "font-size: 20px"> "Immergiti in una serie di letture interessanti che riguardano l'italia e la sua cultura, il tuo livello di writing and reading salirà alle stelle" </div></button>
+  
+</div>
+</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+
+<html>
+
+
+<style>
+
+.topnav {
+margin-left: 800px;
+background:color: white;}
+
+
+.dropdown img {
+width : 300px;
+height: 300px;
+margin-top : 90px;
+maring-left: }
+
+
+.contact{
+background-color: white;
+border: none;}
+
+
+
+body{
+margin-top: 0px;
+height: 100vh;
+background-color:white; 
+font-family: inherit;
+}
+
+.dropdown button {
+cursor:pointer;
+font-family: inherit;
+font-size : 25px;
+}
+
+
+nav{ 
+background-color:white;
+}
+
+.dropdown-vertical { 
+display: list-item;
+font-style: inherit;
+font-weight: bold;
+position:vertical;
+
+
+}
+
+
+.dropdown { 
+height :10vh;
+justify-content: space-around;
+display: flex;
+align-items: center;
+width : 100%;
+margin: auto;
+}
+
+.dropdown p{
+margin-left: -90px}
+
+.projects, 
+.products, .extra {
+position:relative; 
+}
+
+.ascolta{ position: relative;
+  display: inline-block;}
+
+.dropdown-content {
+  margin-left: -100px;
+height: 50px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+font-size: 15px;
+font-family: inherit;
+width: 150px;
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.ascolta:hover .dropdown-content {
+margin-top: 0px; 
+display: flex;}
+
+.ascolta:hover .dropbtn {background-color: #3e8e41;}
+
+
+.projects a, 
+.products a, .extra a, .home a, .dialetti a , .ascolta a, a{
+color: black;
+text-decoration: none;}
+
+
+
+.home:hover, .projects button:hover, .products button:hover, .extra button:hover, .ascolta button:hover, .dialetti button:hover, .congiuntivo button:hover, .indicativo button:hover, .condizionale button:hover{
+background-color : grey;
+border: solid 2px;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown button{
+background :none;
+border: none;
+color: black;	;
+text-decoration : none;}
+
+
+
+
+.dropdown2 { 
+height :5vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "30sp";
+width : 50%;
+margin: auto;
+}
+
+.indicativo , 
+.congiuntivo, .condizionale {
+position:relative; 
+}
+
+
+.indicativo ul, .congiuntivo ul, .condizionale ul{
+
+position : absolute; 
+;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+
+.indicativo  a, 
+.congiuntivo a, .condizionale a, .regole a{
+color: black;
+text-decoration: none;}
+
+.indicativo  li, .congiuntivo li, .condizionale li{
+width: 150%;
+height : 30%;
+background-color: seashell ;
+box-sizing:border-box;
+algin-items: center;
+ list-style-position:inside;
+ border: 1px solid black;
+}
+
+.indicativo li:hover, .congiuntivo li:hover, .condizionale li:hover{
+background-color : red;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown2 button{
+background :none;
+font-size: 15px;
+border: none;
+color: black;
+text-decoration : none;}
+
+.indicativo button:focus + ul, .congiuntivo button:focus + ul, .condizionale button:focus + ul{
+opacity : 1;
+pointer-events: all;}
+
+.dropdown-vertical li{
+margin:10px
+}
+
+.dropdown-vertical ul{
+font-size: 15px}
+
+
+</style>
+
+
+<div class ="topnav">
+
+
+
+<div>
+
+<button class= "contact">Lavora con noi</button>
+<button class= "contact">Contact us</button>
+<input class = "search-text" type="text" placeholder="Search..">
+
+<button  > Go </button>
+
+
+</div>
+
+</div>
+
+
+
+  <nav>
+
+    <div class="dropdown">
+
+     <p><img src= "C:\Users\Odoo\Documents\sito\img\accentook2.png"></p>
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "ascolta">
+            <button> <a href= "file:///C:/Users/Odoo/Documents/sito/guarda.html">Ascoltare</a> </button>
+            <div class=  "dropdown-content">          
+<a href="#">Video e Documentari </a>
+           <a href="#">Canzoni Italiane</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+            
+  </div>
+         
+
+<div class= "ascolta">
+            <button> <a href=file:///C:/Users/Odoo/Documents/sito/leggi.html ">Leggere </a></button>
+           <div class=  "dropdown-content">          
+<a href="#">Testi comici e divertenti </a>
+           <a href="#">Testi culturali e storici</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+   
+</div>
+
+   <div class= "ascolta">
+            <button class="drpbtn"><a href="file:///C:/Users/Odoo/Documents/sito/ascolta.html"> Grammatica </a></button><hr>
+<div class=  "dropdown-content">          
+<a href="#">Regole e morfologia </a>
+           <a href="#">Verbi e Coniugazioni</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+</div>
+   <div class= "dialetti" style="margin-left: 100px; ">
+            <button style=" background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Registrati  </button>
+    
+</div>
+
+   <div class= "products">
+            <button style="font-size:20px;background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Login</button>
+     
+</div>
+</div>
+</nav>
+
+<hr>
+
+
+
+
+</div>
+
+    <div class="dropdown2">
+     <button div class= "regole"><u><a href ="#"> Regole e Morfologia</a></u></button>
+        <div class = "indicativo">
+            <button> Verbi e Coniugazioni </button>
+        
+  </div>
+            <div class= "congiuntivo">
+            <button> Vai con La Pratica!</button>
+        
+</div>
+
+
+</div>
+</div>
+
+<div class=  "dropdown-vertical" style = "margin-top: 100px; position: absolute;  ">      
+<ul><a href="#" style = "font-size: 15px;color: green;">Regole e morfologia</a>
+<li><a href="#">Gli Articoli</a></li>
+<li><a href="#">Gli Aggettivi</a></li>
+<li><a href="#"> La Frase Classica</a> </li>
+<li><a href="#">I Pronomi</a></li>
+<li><a href="#"> Gli Avverbi</a> </li>
+<li> <a href="#">Le Preposizioni </a></li>
+<li> <a href="#">Le Congiunzioni</a> </li>
+</ul>
+          <ul> <a href="#" style = "color: green";>Verbi e Coniugazioni</a>
+<li> <a href="#">L'Indicativo</a> </li>
+<li> <a href="#">Il Congiuntivo </a></li>
+<li> <a href="#">Il Condizionale </a></li>           
+<li><a href="#"> Pratica</a></li></ul>
+</div>
+
+<body>
+<div style = "margin-left:200px; padding: 25px">
+<h1 style = "text-align: center; 
+color : green; font-size:40px""> I Pronomi </h1>
+
+<div class: "audio"; style="text-align: right;margin : 30px"> 
+
+<p><i> Impara i Pronomi in 30 secondi"!</i></p>
+<audio src= "C:\Users\Odoo\Documents\sito\artdet.mp4" controls > This audio is great </audio>
+</div>
+
+<div style= "font-style:inherit; margin: 50px; padding: 25px;font-size:25px";>
+
+<p>
+I pronomi sono: <p>
+<p>
+<li><b>personali</b>: io, me, tu, lui, lei, noi, voi, loro <br>
+Esempi:<i> Io vado al campetto, voi andate a casa, lei viene con me.</i></li> 
+<li><b>possessivi</b>: mio, tuo, suo, nostro, vostro, loro <br>
+<i>Tuo fratello è venuto da me per conto suo</i></li> 
+<li><b>dimostrativi</b>: questo, codesto, quello, stesso, medesimo <br>
+<i>Questo pane è raffermo. E’ lo stesso di ieri.<</i>/li> 
+<li><b>interrogativi</b>: chi, che cosa, quando, che, come<br>
+<i>Come andremo a Venezia? E con chi partiremo? E quando arriveranno i biglietti?</i></li> 
+<li><b>esclamativi</b>: chi, che cosa, quando, che, come<br>
+<i>Che hai combinato! Ma chi te l’ ha fatto fare!</i></li> 
+<li><b>relativi</b>: che, chi, il quale, la quale, i quali</i><br>
+<i>Giacomo andò a prendere all’ aeroporto suo papà, il quale/che era arrivato già da un po’ di tempo </i><br>
+<i>Chi può dirlo se non tu, che hai sempre avuto ragione!</i></li> 
+⚠ Attenzione ai pronomi relativi, infatti questi hanno una funzione molto importante. Quella cioè di legare una “subordinata” a un proposizione “principale”. 
+<li><b>indefiniti</b>: qualcuno, qualche, nessuno, alcuni, alcuna.<br>
+<i>Qualcuno interrogò i passanti. Nessuno rispose. Alcuni erano incerti se farlo.</i></li> </p>
+<p>Come si vede dagli esempi, i pronomi sono molto diffusi in italiano sia nello scritto che nel parlato, infatti essi hanno la funzione di sostituire all’ interno di una frase un nome <br>
+esempio:<i> Marco mi ha detto di portare fuori il cane, ma non lo/l’ ho ascoltato.</i><p>
+
+<p>Oppure un verbo, il quale se ripetuto andrebbe a creare una disarmonia o una ridondanza. <br>
+Esempio: Fumava da tre anni, e lo avrebbe fatto per altri tre. <br>
+(Letteralmente: Fumava da tre anni, e avrebbe fumato per altri tre). Quindi il pronome “lo” va a sostituire il verbo “fumare” nella seconda parte, così da creare armonia nel testo.</p>
+
+<p> Nota bene, le ripetizioni in italiano vanno evitate se possibile! Infatti questa lingua offre una vasta gamma di parole che significano la stessa cosa ma possono essere dette in modo diverso! </p>
+
+<p>Vedi quest’ esempio:<i> Fallo da cartellino giallo, ammonizione per il giocatore</i>.</p> 
+
+<p>Oppure: <i>Il gioco è bello, quando (il gioco) dura poco.</i> O ancora: </i>Maria indossava un vestito blu: quel colore (blu) le piaceva così tanto!</i></p>
+<p>Inoltre i pronomi possono sostituire all’ interno di una frase un aggettivo. <br>
+Esempio: <i> Avresti dovuto essere più indulgente, invece non lo sei stato.</i>
+<p>Infine possono sostituire un’ intera proposizione.<br>
+ Esempio: <i>Quando partiremo per Roma? Non me lo hai detto. </i>(Letteralmente la frase andrebbe così fatta: <i>“Quando partiremo per Roma? Non mi hai detto quando partiremo per Roma.”</i>). </p>
+</p>
+
+</div>
+
+<audio src= "C:\Users\Odoo\Documents\sito\artdet.mp4" controls > This audio is great </audio>
+</body>
+
+
+
+
+</html>

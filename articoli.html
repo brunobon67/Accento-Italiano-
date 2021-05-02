@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<style>
+
+.topnav {
+margin-left: 800px;
+background:color: white;}
+
+
+.dropdown img {
+width : 300px;
+height: 300px;
+margin-top : 90px;
+maring-left: }
+
+
+.contact{
+background-color: white;
+border: none;}
+
+
+
+body{
+margin-top: 0px;
+height: 100vh;
+background-color:white; 
+font-family: inherit;
+}
+
+.dropdown button {
+cursor:pointer;
+font-family: inherit;
+font-size : 25px;
+}
+
+
+nav{ 
+background-color:white;
+}
+
+.dropdown-vertical { 
+display: list-item;
+font-style: inherit;
+font-weight: bold;
+position:vertical;
+
+
+}
+
+
+.dropdown { 
+height :10vh;
+justify-content: space-around;
+display: flex;
+align-items: center;
+width : 100%;
+margin: auto;
+}
+
+.dropdown p{
+margin-left: -90px}
+
+.projects, 
+.products, .extra {
+position:relative; 
+}
+
+.ascolta{ position: relative;
+  display: inline-block;}
+
+.dropdown-content {
+  margin-left: -100px;
+height: 50px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+font-size: 15px;
+font-family: inherit;
+width: 150px;
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.ascolta:hover .dropdown-content {
+margin-top: 0px; 
+display: flex;}
+
+.ascolta:hover .dropbtn {background-color: #3e8e41;}
+
+
+.projects a, 
+.products a, .extra a, .home a, .dialetti a , .ascolta a, a{
+color: black;
+text-decoration: none;}
+
+
+
+.home:hover, .projects button:hover, .products button:hover, .extra button:hover, .ascolta button:hover, .dialetti button:hover, .congiuntivo button:hover, .indicativo button:hover, .condizionale button:hover{
+background-color : grey;
+border: solid 2px;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown button{
+background :none;
+border: none;
+color: black;	;
+text-decoration : none;}
+
+
+
+
+.dropdown2 { 
+height :5vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "30sp";
+width : 50%;
+margin: auto;
+}
+
+.indicativo , 
+.congiuntivo, .condizionale {
+position:relative; 
+}
+
+
+.indicativo ul, .congiuntivo ul, .condizionale ul{
+
+position : absolute; 
+;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+
+.indicativo  a, 
+.congiuntivo a, .condizionale a, .regole a{
+color: black;
+text-decoration: none;}
+
+.indicativo  li, .congiuntivo li, .condizionale li{
+width: 150%;
+height : 30%;
+background-color: seashell ;
+box-sizing:border-box;
+algin-items: center;
+ list-style-position:inside;
+ border: 1px solid black;
+}
+
+.indicativo li:hover, .congiuntivo li:hover, .condizionale li:hover{
+background-color : red;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown2 button{
+background :none;
+font-size: 15px;
+border: none;
+color: black;
+text-decoration : none;}
+
+.indicativo button:focus + ul, .congiuntivo button:focus + ul, .condizionale button:focus + ul{
+opacity : 1;
+pointer-events: all;}
+
+.dropdown-vertical li{
+margin:10px
+}
+
+.dropdown-vertical ul{
+font-size: 15px}
+
+
+</style>
+
+
+<div class ="topnav">
+
+
+
+<div>
+
+<button class= "contact">Lavora con noi</button>
+<button class= "contact">Contact us</button>
+<input class = "search-text" type="text" placeholder="Search..">
+
+<button  > Go </button>
+
+
+</div>
+
+</div>
+
+
+
+  <nav>
+
+    <div class="dropdown">
+
+     <p><img src= "C:\Users\Odoo\Documents\sito\img\accentook2.png"></p>
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "ascolta">
+            <button> <a href= "file:///C:/Users/Odoo/Documents/sito/guarda.html">Ascoltare</a> </button>
+            <div class=  "dropdown-content">          
+<a href="#">Video e Documentari </a>
+           <a href="#">Canzoni Italiane</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+            
+  </div>
+         
+
+<div class= "ascolta">
+            <button> <a href=file:///C:/Users/Odoo/Documents/sito/leggi.html ">Leggere </a></button>
+           <div class=  "dropdown-content">          
+<a href="#">Testi comici e divertenti </a>
+           <a href="#">Testi culturali e storici</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+   
+</div>
+
+   <div class= "ascolta">
+            <button class="drpbtn"><a href="file:///C:/Users/Odoo/Documents/sito/ascolta.html"> Grammatica </a></button><hr>
+<div class=  "dropdown-content">          
+<a href="#">Regole e morfologia </a>
+           <a href="#">Verbi e Coniugazioni</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+</div>
+   <div class= "dialetti" style="margin-left: 100px; ">
+            <button style=" background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Registrati  </button>
+    
+</div>
+
+   <div class= "products">
+            <button style="font-size:20px;background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Login</button>
+     
+</div>
+</div>
+</nav>
+
+<hr>
+
+
+
+
+</div>
+
+    <div class="dropdown2">
+     <button div class= "regole"><u><a href ="#"> Regole e Morfologia</a></u></button>
+        <div class = "indicativo">
+            <button> Verbi e Coniugazioni </button>
+        
+  </div>
+            <div class= "congiuntivo">
+            <button> Vai con La Pratica!</button>
+        
+</div>
+
+
+</div>
+</div>
+
+<div class=  "dropdown-vertical" style = "margin-top: 100px; position: absolute;  ">      
+<ul><a href="#" style = "font-size: 15px;color: green;">Regole e morfologia</a>
+<li><a href="#">Gli Articoli</a></li>
+<li><a href="#">Gli Aggettivi</a></li>
+<li><a href="#"> La Frase Classica</a> </li>
+<li><a href="#">I Pronomi</a></li>
+<li><a href="#"> Gli Avverbi</a> </li>
+<li> <a href="#">Le Preposizioni </a></li>
+<li> <a href="#">Le Congiunzioni</a> </li>
+</ul>
+          <ul> <a href="#" style = "color: green";>Verbi e Coniugazioni</a>
+<li> <a href="#">L'Indicativo</a> </li>
+<li> <a href="#">Il Congiuntivo </a></li>
+<li> <a href="#">Il Condizionale </a></li>           
+<li><a href="#"> Pratica</a></li></ul>
+</div>
+
+<body>
+<div style = "margin-left:200px; padding: 25px">
+<h1 style = "text-align: center; 
+color : green; font-size:40px""> Gli Articoli </h1>
+
+<div class: "audio"; style="text-align: right;margin : 30px"> 
+
+<p><i> Impara gli articoli in 30 secondi"!</i></p>
+<audio src= "C:\Users\Odoo\Documents\sito\artdet.mp4" controls > This audio is great </audio>
+</div>
+
+<div style= "font-style:inherit; margin: 50px; padding: 25px;font-size:25px";>
+<h2 style = "text-align: center; 
+color : green"> Gli Articoli Determinativi </h2>
+<p>
+<p>Gli articoli determinativi si dividono per genere (maschile e femminile) e per numero(singolari e plurali)</p> Sono quindi
+<b>Singolari Maschili:  </b>
+<b>il/lo/ l’ (apostrofo)</b>
+<p>L’ articolo “il“ va davanti alle parole che iniziano per consonante. Ad esempio “il console” “il professore”</p>
+L’ articolo “lo” si usa davanti ai nomi che iniziano per “gn” [mettere pronuncia di gn esatta] (lo gnorri) “ps” (lo psicopatico) “pn” (lo pneumologo) e alle parole che iniziano con le lettere “x” (lo xenofobo) “Y” (lo yogurt) “z” (lo zaino); s + consonante lo studente lo starnuto lo stizzo lo scemo lo sciamano lo sputo </p>
+<p>Per quanto riguarda l’ articolo "L’" questo sta sia per “la” sia per “il” e lo utilizzeremo per quelle parole singolari maschili o femminili che iniziano per vocale. Es. l’ amante (maschile), l’ albero eccetera
+L’ femminile lo utilizzeremo così . Es. L’ anca, l’ angoscia,  (cioè “ la” angoscia : la “a” di “la” cade davanti alla vocale con cui inizia la parola seguente)</p>
+<b> Singolari Femminili</b>
+<b>“la”</b>
+la macchina, la suora, la vita, la stanza (n.b. quasi tutte le parole italiane che terminano in “ A” sono femminili e quindi voglio l’ articolo “la” se iniziano per consonante o “l’ “ se iniziano per vocale.
+<b>Plurali Maschili</b>                                           
+  <p> i/gli (mettere esatta pronuncia)</p>
+<p>“i” per i nomi che iniziano per consonante e al plurale quindi ad esempio I libri i videogiochi i santi i caciocavalli i cocci</p>
+<p>Mentre “ gli” va utilizzato nella maggior parte dei casi come plurale di dell’ articolo “lo” quindi diremo 
+Gli pneumologi gli pneumatici gli psicologi che curano gli psicopatici gli studenti che studiano gli anatemi e così via. </p>
+<b>Plurale Femminile  </b>                <b>                            “le”</b>
+<p>Sia se il nome inizia per consonante o per vocale ad esempio le penne le pinne che non sono la stessa cosa ma cambia solo una vocale ! e immaginate al singolare la penna la pinna la panna sono tre cose totalmente diverse ma cambia solo una vocale che andremo a spiegare in sede opportuna!
+</p>
+
+<h2 style = "text-align: center; 
+color : green"> Gli Articoli Indeterminativi </h2>
+<p>
+L 'articolo indeterminativo, a differenza di quello determinativo, si usa per riferirsi a un elemento che fa parte di una categoria di persone, animali, oggetti, concetti, senza riferirsi ad uno di questi il particolare </p>
+<p>
+Es:
+<i>Un uomo vaga per le strade
+Una parola di conforto</i>
+<p>o in riferimento a qualcuno o qualcosa introdotto nella frase come elemento nuovo. </br>
+ es:
+<i>-Vedrai un palazzo</i>
+<i>-Aspettiamo un'idea innovativa</i>
+<p>Le forme dell'articolo indeterminativo, che ha soltanto il singolare, sono le seguenti: </p>
+<p>
+L'articolo maschile singolare UNO si usa:<br>
+— davanti a parole che cominciano con i o j con il valore di *semiconsonante, gn di gnomo, PS, pn, s seguita da consonante,
+sci-, sce-, x, y, z
+<i>uno scienziato </i><br>
+<i>uno juventino </i><br>
+<i>uno gnu  </i><br>
+<i>uno psicologo  </i><br>
+<i>uno pneumatico
+<i>uno storico  </i><br>
+<i>uno xenofobo   </i><br>
+<i>uno yen  </i><br>
+<i>uno zio  </i><br>
+</p>
+<p>
+davanti a parole che cominciano con una consonante seguita da un'altra consonante <br>
+(diversa da I o r)
+<i>uno psicoterapeuta </i><br>
+<i>uno strano oggetto </i><br>
+La forma "UN", si usa in tutti gli altri casi
+<i>un amico </i><br>
+<i>un dado </i><br>
+<i>un erede </i><br>
+</div>
+</div>
+</body>
+</html>

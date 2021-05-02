@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<style>
+
+
+
+body {
+background: seashell;}
+h1{ 
+text-align:center ;
+color: green;}
+
+
+button {
+font-family: inherit;
+font-size : 25px;
+}
+
+.dropdown { 
+height :10vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "60px";
+width : 80%;
+margin: auto;
+}
+
+.projects, 
+.products, .extra {
+position:relative;
+}
+
+
+.projects ul, .products ul, .extra ul{
+position : absolute; 
+background-color:  ;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+.projects a, 
+.products a, .extra a, .home a{
+color: green;
+text-decoration: none;
+font-text: 35px;}
+
+.projects li, .products li, .extra li{
+width: 150%;
+height : 30%;
+background-color: seashell ;
+box-sizing:border-box;
+algin-items: center;
+ list-style-position:inside;
+ border: 1px solid black;
+
+}
+
+.projects li:hover, .products li:hover, .extra li:hover{
+background-color : red;
+height : 50px;
+}
+
+
+
+
+.dropdown button{
+background :none;
+border: none;
+color: green;
+text-decoration : none;}
+
+.projects button:focus + ul, .products button:focus + ul, .extra button:focus + ul{
+opacity : 1;
+pointer-events: all;}
+
+img {
+
+margin-top: 20px;
+widht :200px;
+height: 200px;
+}
+
+
+.Bruno{
+margin-top: 100px;
+font-size: 25px;
+color: green;
+}
+
+p{
+position: absolute;
+margin: -150px;
+margin-left: 350px;
+font-family: sans-serif;
+color:green;
+}
+
+
+</style>
+
+<body>
+
+
+<nav>
+
+    <div class="dropdown">
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "projects">
+            <button> Make Money</button>
+            <ul>   
+            <li><a href="file:///C:/Users/Odoo/Documents/sito/opinione.html"> Lq tua opinione </a></li>
+            <li><a href="#"> Feedbacks</a></li>
+            <li><a href="#"> Altri modi per fare soldi</a></li>
+            </ul>
+  </div>
+            <div class= "products">
+            <button> About us </button>
+            <ul>   
+            <li><a href="file:///C:/Users/asus/Documents/120'/sito/chisiamo.html"> Chi siamo</a></li>
+            <li><a href="#"> Contattaci</a></li>
+            <li><a href="#"> Lavora con noi</a></li>
+            </ul>
+</div>
+
+<div class= "extra">
+            <button> Pillole di saggezza </button>
+            <ul>   
+            <li><a href="#"> Informazioni</a></li>
+            <li><a href="#"> Futuristica</a></li>
+          
+            </ul>
+</div>
+</div>
+</nav>
+
+<hr>
+
+<h1>Our amazing team: </h1>
+
+
+
+
+
+
+
+
+<div class= "Bruno">
+Bruno Bonifacio, detto "Il Sano" 
+</div>
+<img src= "C:\Users\Odoo\Documents\sito\img\top.jpg">
+<p>
+Fondatore,  Direttore Tecnico.
+</p>
+<hr>

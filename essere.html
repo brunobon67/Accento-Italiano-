@@ -1,0 +1,409 @@
+<html>
+
+<style>
+.topnav {
+margin-left: 800px;
+background:color: white;}
+
+
+.dropdown img {
+width : 300px;
+height: 300px;
+margin-top : 90px;
+maring-left: }
+
+
+.contact{
+background-color: white;
+border: none;}
+
+
+
+body{
+margin-top: 0px;
+height: 100vh;
+background-color:white; 
+font-family: inherit;
+}
+
+.dropdown button {
+cursor:pointer;
+font-family: inherit;
+font-size : 25px;
+}
+
+
+nav{ 
+background-color:white;
+}
+
+
+
+.dropdown { 
+height :10vh;
+justify-content: space-around;
+display: flex;
+align-items: center;
+width : 100%;
+margin: auto;
+}
+
+.dropdown p{
+margin-left: -90px}
+
+.projects, 
+.products, .extra {
+position:relative; 
+}
+
+.ascolta{ position: relative;
+  display: inline-block;}
+
+.dropdown-content {
+  margin-left: -100px;
+height: 50px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+font-size: 15px;
+font-family: inherit;
+width: 150px;
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.ascolta:hover .dropdown-content {
+margin-top: 0px; 
+display: flex;}
+
+.ascolta:hover .dropbtn {background-color: #3e8e41;}
+
+
+.projects a, 
+.products a, .extra a, .home a, .dialetti a , .ascolta a, a{
+color: black;
+text-decoration: none;}
+
+
+
+.home:hover, .projects button:hover, .products button:hover, .extra button:hover, .ascolta button:hover, .dialetti button:hover, .congiuntivo button:hover, .indicativo button:hover, .condizionale button:hover, .regole button:hover{
+background-color : grey;
+border: solid 2px;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown button{
+background :none;
+border: none;
+color: black;	;
+text-decoration : none;}
+
+
+
+
+.dropdown2 { 
+height :5vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "30sp";
+width : 50%;
+margin: auto;
+}
+
+.indicativo , 
+.congiuntivo, .condizionale {
+position:relative; 
+}
+
+
+.indicativo ul, .congiuntivo ul, .condizionale ul{
+
+position : absolute; 
+;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+
+.indicativo  a, 
+.congiuntivo a, .condizionale a, .regole a{
+color: black;
+text-decoration: none;}
+
+
+
+
+.dropdown2 button{
+font-family: inherit;
+font-size : 20px;
+background :none;
+border: none;
+color: black;
+text-decoration : none;}
+
+
+
+
+
+.table{
+padding : 50px;}
+
+table {
+border-collapse:collapse
+text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 1%;
+
+}
+td, th {
+border:1px solid #ddd;
+border-color: green;
+padding:8px;
+width : 500px;
+}
+
+th{
+background-color: snow;
+}
+
+caption{
+padding: 20px;
+background-color: snow;
+color: green;
+border:1px solid #ddd;
+font-style: inherit;
+font-weight: bold;
+font-size: 22px;
+border-color: green;}
+
+.vai {
+padding:30px;
+text-align:center;}
+
+.vai button{ 
+witdh: 24%;
+height: 8%;
+background-color: snow;
+border-color:green;
+margin-bottom: 2%;
+cursor: pointer;}
+
+.dropdown-vertical ul{
+font-size: 20px;
+
+}
+
+
+</style>
+
+
+<div class ="topnav">
+
+
+
+<div>
+
+<button class= "contact">Lavora con noi</button>
+<button class= "contact">Contact us</button>
+<input class = "search-text" type="text" placeholder="Search..">
+
+<button  > Go </button>
+
+
+</div>
+
+</div>
+
+
+
+  <nav>
+
+    <div class="dropdown">
+
+     <p><img src= "C:\Users\Odoo\Documents\sito\img\accentook2.png"></p>
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "ascolta">
+            <button> <a href= "file:///C:/Users/Odoo/Documents/sito/guarda.html">Ascoltare</a> </button>
+
+            
+  </div>
+         
+
+<div class= "ascolta">
+            <button> <a href=file:///C:/Users/Odoo/Documents/sito/leggi.html ">Leggere </a></button>
+       
+   
+</div>
+
+   <div class= "ascolta">
+            <button class="drpbtn"><a href="file:///C:/Users/Odoo/Documents/sito/ascolta.html"><u> Grammatica</u> </a></button>
+
+</div>
+   <div class= "dialetti" style="margin-left: 100px; ">
+            <button style=" background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Registrati  </button>
+    
+</div>
+
+   <div class= "products">
+            <button style="font-size:20px;background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Login</button>
+     
+</div>
+</div>
+</nav>
+
+<hr>
+
+
+<div>
+   <div class="dropdown2">
+<div class= "regole">     
+ <button ><a href ="file:///C:/Users/Odoo/Documents/sito/regolegrammatica.html"> Regole e Morfologia</a></button>
+</div>
+        <div class = "indicativo">
+            <button><u> <a href ="#">Verbi e coniugazioni</u></a></button>
+        
+  </div>
+            <div class= "congiuntivo">
+            <button> Vai con la pratica!</button>
+        
+</div>
+
+
+</div>
+
+
+
+     
+ </div>
+</div>
+</div>
+</div>
+
+
+<div class=  "dropdown-vertical" style = "margin-top: 75px; position: absolute;  "> 
+
+<ul> <a href="#" style = "color: green;font-weight: bold;">Verbi Ausiliari</a>
+<li><a href="#"><u>Essere</u></a></li>
+<li><a href="file:///C:/Users/Odoo/Documents/sito/avereindicativo.html"> Avere</a> </li>
+</ul>
+     
+<ul><a href="#" style = "color: green;font-weight: bold;">Verbi in -are</a>
+<li><a href="#">Mangiare</a></li>
+<li><a href="#">Cantare</a></li>
+<li><a href="#"> Volare</a> </li></ul>
+
+<ul> <a href="#" style = "color: green;font-weight: bold;">Verbi in - ere</a>
+<li><a href="#">Ricevere</a></li>
+<li><a href="#"> Sapere</a> </li>
+<li> <a href="#"> Volere</a></li>
+
+</ul>
+<ul><a href="#" style = "color: green;font-weight: bold;">Verbi in -are</a>
+<li> <a href="#">Amare</a> </li>
+<li> <a href="#">Cantare</a></li>
+<li> <a href="#">Pantare </a></li>           
+</ul>
+</div>
+<body>
+
+
+<div  style= "margin-left: 100px; margin-top: 40px;">
+<h1 style= "text-align: center; color: green;"> Verbo Essere </h1>
+<div class ="table">
+<table>
+<caption>
+Indicativo
+</caption>
+<thead>
+<tr><th>Presente</th><th>Passato Prossimo</th></tr>
+</thead>
+<tbody>
+<tr><td>Io sono</td> <td >Io sono stato</td></tr>
+<tr><td>Tu sei</td><td>Tu sei stato</td></tr>
+<tr><td>Lui/Lei é</td><td>Lui/Lei é stato</td></tr>
+<tr><td>No siamo</td><td>Noi siamo stati</td></tr>
+<tr><td>Voi Siete</td><td>Voi siete stati</td></tr>
+<tr><td>Loro Sono</td><td>Loro sono stati</td></tr>
+</tbody>
+</table>
+<table>
+
+<thead>
+<tr><th>Imperfetto</th><th>Trapassato Prossimo</th></tr>
+</thead>
+<tbody>
+<tr><td>Io ero</td> <td >Io ero stato</td></tr>
+<tr><td>Tu eri</td><td>Tu eri stato</td></tr>
+<tr><td>Lui/Lei era</td><td>Lui/Lei era stato</td></tr>
+<tr><td>No eravamo</td><td>Noi siamo stati</td></tr>
+<tr><td>Voi eravate</td><td>Voi siete stati</td></tr>
+<tr><td>Loro erano</td><td>Loro sono stati</td></tr>
+</tbody>
+</table>
+<table>
+
+<thead>
+<tr><th>Passato Remoto</th><th>Trapassato Remoto</th></tr>
+</thead>
+<tbody>
+<tr><td>Io fui</td> <td >Io fui stato</td></tr>
+<tr><td>Tu fosti</td><td>Tu fosti stato</td></tr>
+<tr><td>Lui/Lei fu</td><td>Lui/Lei fu stato</td></tr>
+<tr><td>No fummo</td><td>Noi fummo stati</td></tr>
+<tr><td>Voi foste</td><td>Voi foste stati</td></tr>
+<tr><td>Loro furono</td><td>Loro furono stati</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr><th>Futuro Semplice</th><th>Futuro Anteriore</th></tr>
+</thead>
+<tbody>
+<tr><td>Io saro'</td> <td >Io saro' stato</td></tr>
+<tr><td>Tu sarai</td><td>Tu sarai stato</td></tr>
+<tr><td>Lui/Lei sarà</td><td>Lui/Lei sarà stato</td></tr>
+<tr><td>No saremo</td><td>Noi saremo stato</td></tr>
+<tr><td>Voi sarete</td><td>Voi sarete stato</td></tr>
+<tr><td>Loro saranno</td><td>Loro saranno stato</td></tr>
+</tbody>
+</table>
+
+
+<div class = "vai">
+<button><a href= "file:///C:/Users/Odoo/Documents/sito/congiuntivo.html ">Vai al congiuntivo </a></button>
+<button> <a href= "file:///C:/Users/Odoo/Documents/sito/condizionale.html#"> Vai al condizionale </a></button>
+<button>  <a href= "file:///C:/Users/Odoo/Documents/sito/imperativoecc.html"> Vai all'imperativo </a></button>
+</div>
+</div>
+</body>
+
+</html>

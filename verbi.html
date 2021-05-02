@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<style>
+
+.topnav {
+margin-left: 800px;
+background:color: white;}
+
+
+.dropdown img {
+width : 300px;
+height: 300px;
+margin-top : 90px;
+maring-left: }
+
+
+.contact{
+background-color: white;
+border: none;}
+
+
+
+body{
+margin-top: 0px;
+height: 100vh;
+background-color:white; 
+font-family: inherit;
+}
+
+.dropdown button {
+cursor:pointer;
+font-family: inherit;
+font-size : 25px;
+}
+
+
+nav{ 
+background-color:white;
+}
+
+
+
+.dropdown { 
+height :10vh;
+justify-content: space-around;
+display: flex;
+align-items: center;
+width : 100%;
+margin: auto;
+}
+
+.dropdown p{
+margin-left: -90px}
+
+.projects, 
+.products, .extra {
+position:relative; 
+}
+
+.ascolta{ position: relative;
+  display: inline-block;}
+
+.dropdown-content {
+  margin-left: -100px;
+height: 50px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+font-size: 15px;
+font-family: inherit;
+width: 150px;
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.ascolta:hover .dropdown-content {
+margin-top: 0px; 
+display: flex;}
+
+.ascolta:hover .dropbtn {background-color: #3e8e41;}
+
+
+.projects a, 
+.products a, .extra a, .home a, .dialetti a , .ascolta a, a{
+color: black;
+text-decoration: none;}
+
+
+
+.home:hover, .projects button:hover, .products button:hover, .extra button:hover, .ascolta button:hover, .dialetti button:hover, .congiuntivo button:hover, .indicativo button:hover, .condizionale button:hover{
+background-color : grey;
+border: solid 2px;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown button{
+background :none;
+border: none;
+color: black;	;
+text-decoration : none;}
+
+
+
+
+.dropdown2 { 
+height :5vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "30sp";
+width : 50%;
+margin: auto;
+}
+
+.indicativo , 
+.congiuntivo, .condizionale {
+position:relative; 
+}
+
+
+.indicativo ul, .congiuntivo ul, .condizionale ul{
+
+position : absolute; 
+;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+
+.indicativo  a, 
+.congiuntivo a, .condizionale a, .regole a{
+color: black;
+text-decoration: none;}
+
+.indicativo  li, .congiuntivo li, .condizionale li{
+width: 150%;
+height : 30%;
+background-color: seashell ;
+box-sizing:border-box;
+algin-items: center;
+ list-style-position:inside;
+ border: 1px solid black;
+}
+
+.indicativo li:hover, .congiuntivo li:hover, .condizionale li:hover{
+background-color : red;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown2 button{
+background :none;
+font-size: 15px;
+border: none;
+color: black;
+text-decoration : none;}
+
+.indicativo button:focus + ul, .congiuntivo button:focus + ul, .condizionale button:focus + ul{
+opacity : 1;
+pointer-events: all;}
+
+.menu{
+text-align: left;
+
+}
+
+.principale{
+position:absolute;
+margin-left: 100px;
+margin-top: -350px;
+}
+
+.menu button, .top-menu button{
+border: solid  2px;
+border-color: green;
+font-family: inherit;
+font-weight: ;
+font-size: 18px;
+width : 200px;
+height: 50px;
+margin: 20px;
+background-color: white;
+transition: all 0.5s ease;
+cursor: pointer;
+border-radius: 15px;
+}
+
+
+.menu button:hover, .top-menu button:hover{
+border: solid 2px;
+background-color: red;
+height: 55px;
+width: 210px;
+}
+
+.curiosita{ 
+margin-top: 50px;
+margin-right: 120px;
+position: relative; 
+text-align: right;}
+
+</style>
+
+
+<div class ="topnav">
+
+
+
+<div>
+
+<button class= "contact">Lavora con noi</button>
+<button class= "contact">Contact us</button>
+<input class = "search-text" type="text" placeholder="Search..">
+
+<button  > Go </button>
+
+
+</div>
+
+</div>
+
+
+
+  <nav>
+
+    <div class="dropdown">
+
+     <p><img src= "C:\Users\Odoo\Documents\sito\img\accentook2.png"></p>
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "ascolta">
+            <button> <a href= "file:///C:/Users/Odoo/Documents/sito/guarda.html">Ascoltare</a> </button>
+            <div class=  "dropdown-content">          
+<a href="#">Video e Documentari </a>
+           <a href="#">Canzoni Italiane</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+            
+  </div>
+         
+
+<div class= "ascolta">
+            <button> <a href=file:///C:/Users/Odoo/Documents/sito/leggi.html ">Leggere </a></button>
+           <div class=  "dropdown-content">          
+<a href="#">Testi comici e divertenti </a>
+           <a href="#">Testi culturali e storici</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+   
+</div>
+
+   <div class= "ascolta">
+            <button class="drpbtn"><a href="file:///C:/Users/Odoo/Documents/sito/ascolta.html"> Grammatica </a></button><hr>
+<div class=  "dropdown-content">          
+<a href="file:///C:/Users/Odoo/Documents/sito/regolegrammatica.html">Regole e morfologia </a>
+           <a href="#">Verbi e Coniugazioni</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+</div>
+   <div class= "dialetti" style="margin-left: 100px; ">
+            <button style=" background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Registrati  </button>
+    
+</div>
+
+   <div class= "products">
+            <button style="font-size:20px;background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Login</button>
+     
+</div>
+</div>
+</nav>
+
+<hr>
+
+
+<div>
+
+    <div class="dropdown2">
+     <button div class= "regole" ;><a href ="file:///C:/Users/Odoo/Documents/sito/regolegrammatica.html"> Regole e Morfologia</a></button>
+
+        <div class = "indicativo">
+            <button> <u>Verbi e coniugazioni</u></button>
+        
+  </div>
+            <div class= "congiuntivo">
+            <button> Vai con la pratica!</button>
+        
+</div>
+
+
+</div>
+</div>
+
+<div class= "curiosita">
+
+<div class= "top-menu" >
+<h2 style= "font-weight: bold;font-style: inherit; color : green; margin-right:45px;"> Tutte le regole</h2>
+<button> Verbi Irregolari</button><br>
+<button> Ausiliari  </button><br>
+<button> Tranistivi ed Intransitivi </button>
+
+</div>
+
+</div>
+<div class= "principale" style = "padding :0px;">
+
+<h1 style= "text-align: center; font-weight: bold; font-style: inherit; color : green"; "> Tempi Verbali</h1>
+<div class= "menu">
+
+<button> <a href="file:///C:/Users/Odoo/Documents/sito/essere.html#">Indicativo</a></button>
+<button> <a href="file:///C:/Users/Odoo/Documents/sito/congiuntivo.html">Congiuntivo</a></button>
+
+
+
+
+</div>
+<div class= "menu">
+
+<button> Condizionale</button>
+<button> Imperativo </button>
+
+
+
+</div>
+<div class= "menu">
+<button> Infinito</button>
+<button> Participio </button>
+
+<div class= "menu">
+<button> Infinito</button>
+<button> Participio </button>
+
+
+</div>
+</div>
+</div>
+</html>
+
