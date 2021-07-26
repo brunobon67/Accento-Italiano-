@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<style>
+
+.topnav {
+margin-left: 800px;
+background:color: white;}
+
+
+.dropdown img {
+width : 300px;
+height: 300px;
+margin-top : 90px;
+maring-left: }
+
+
+.contact{
+background-color: white;
+border: none;}
+
+
+
+body{
+margin-top: 0px;
+height: 100vh;
+background-color:white; 
+font-family: inherit;
+}
+
+.dropdown button {
+cursor:pointer;
+font-family: inherit;
+font-size : 25px;
+}
+
+
+nav{ 
+background-color:white;
+}
+
+.dropdown-vertical { 
+display: list-item;
+font-style: inherit;
+font-weight: bold;
+position:vertical;
+
+
+}
+
+
+.dropdown { 
+height :10vh;
+justify-content: space-around;
+display: flex;
+align-items: center;
+width : 100%;
+margin: auto;
+}
+
+.dropdown p{
+margin-left: -90px}
+
+.projects, 
+.products, .extra {
+position:relative; 
+}
+
+.ascolta{ position: relative;
+  display: inline-block;}
+
+.dropdown-content {
+  margin-left: -100px;
+height: 50px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+font-size: 15px;
+font-family: inherit;
+width: 150px;
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.ascolta:hover .dropdown-content {
+margin-top: 0px; 
+display: flex;}
+
+.ascolta:hover .dropbtn {background-color: #3e8e41;}
+
+
+.projects a, 
+.products a, .extra a, .home a, .dialetti a , .ascolta a, a{
+color: black;
+text-decoration: none;}
+
+
+
+.home:hover, .projects button:hover, .products button:hover, .extra button:hover, .ascolta button:hover, .dialetti button:hover, .congiuntivo button:hover, .indicativo button:hover, .condizionale button:hover{
+background-color : grey;
+border: solid 2px;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown button{
+background :none;
+border: none;
+color: black;	;
+text-decoration : none;}
+
+
+
+
+.dropdown2 { 
+height :5vh;
+background color: green;
+justify-content: space-around;
+display: flex;
+align-items: center;
+font-size: "30sp";
+width : 50%;
+margin: auto;
+}
+
+.indicativo , 
+.congiuntivo, .condizionale {
+position:relative; 
+}
+
+
+.indicativo ul, .congiuntivo ul, .condizionale ul{
+
+position : absolute; 
+;
+margin-top: 10px;
+width: 120px ;
+height: 150px ;
+justify-content: space-around;
+text-align: flex-start;
+align-items : left
+flex-direction: column;
+list-style: none;
+border-radius : 5px;
+opacity : 0;
+pointer events : none;
+transform : translateY (10px);
+transition: all 0,4s ease;
+
+}
+
+
+
+.indicativo  a, 
+.congiuntivo a, .condizionale a, .regole a{
+color: black;
+text-decoration: none;}
+
+.indicativo  li, .congiuntivo li, .condizionale li{
+width: 150%;
+height : 30%;
+background-color: seashell ;
+box-sizing:border-box;
+algin-items: center;
+ list-style-position:inside;
+ border: 1px solid black;
+}
+
+.indicativo li:hover, .congiuntivo li:hover, .condizionale li:hover{
+background-color : red;
+height : 50px;
+widht: 50px;
+}
+
+
+.dropdown2 button{
+background :none;
+font-size: 15px;
+border: none;
+color: black;
+text-decoration : none;}
+
+.indicativo button:focus + ul, .congiuntivo button:focus + ul, .condizionale button:focus + ul{
+opacity : 1;
+pointer-events: all;}
+
+.dropdown-vertical li{
+margin:10px
+}
+
+.dropdown-vertical ul{
+font-size: 15px}
+
+
+</style>
+
+
+<div class ="topnav">
+
+
+
+<div>
+
+<button class= "contact">Lavora con noi</button>
+<button class= "contact">Contact us</button>
+<input class = "search-text" type="text" placeholder="Search..">
+
+<button  > Go </button>
+
+
+</div>
+
+</div>
+
+
+
+  <nav>
+
+    <div class="dropdown">
+
+     <p><img src= "img\accentook2.png"></p>
+     <button div class= "home"><a href ="file:///C:/Users/Odoo/Documents/sito/homepage.html"> Home</a></button>
+        <div class = "ascolta">
+            <button> <a href= "guarda.html">Ascoltare</a> </button>
+            <div class=  "dropdown-content">          
+<a href="#">Video e Documentari </a>
+           <a href="#">Canzoni Italiane</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+            
+  </div>
+         
+
+<div class= "ascolta">
+            <button> <a href="leggi.html ">Leggere </a></button>
+           <div class=  "dropdown-content">          
+<a href="#">Testi comici e divertenti </a>
+           <a href="#">Testi culturali e storici</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+   
+</div>
+
+   <div class= "ascolta">
+            <button class="drpbtn"><a href="grammaticahome.html"> Grammatica </a></button><hr>
+<div class=  "dropdown-content">          
+<a href="#">Regole e morfologia </a>
+           <a href="#">Verbi e Coniugazioni</a>
+            <a href="#"> Esercizi Pratici</a>
+          
+        
+</div>
+</div>
+   <div class= "dialetti" style="margin-left: 100px; ">
+            <button style=" background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Registrati  </button>
+    
+</div>
+
+   <div class= "products">
+            <button style="font-size:20px;background-color: whitesmoke; border: solid 2px; font-size:15px; height:40px";> Login</button>
+     
+</div>
+</div>
+</nav>
+
+<hr>
+<div class=  "dropdown-vertical" style = "margin-top: 100px; position: absolute;  ">      
+<ul><a href="#" style = "font-size: 15px;color: green;">Regole e morfologia</a>
+<li><a href="#">Gli Articoli</a></li>
+<li><a href="#">Gli Aggettivi</a></li>
+<li><a href="#"> La Frase Classica</a> </li>
+<li><a href="#">I Pronomi</a></li>
+<li><a href="#"> Gli Avverbi</a> </li>
+<li> <a href="#">Le Preposizioni </a></li>
+<li> <a href="#">Le Congiunzioni</a> </li>
+</ul>
+          <ul> <a href="#" style = "color: green";>Verbi e Coniugazioni</a>
+<li> <a href="#">L'Indicativo</a> </li>
+<li> <a href="#">Il Congiuntivo </a></li>
+<li> <a href="#">Il Condizionale </a></li>           
+<li><a href="#"> Pratica</a></li></ul>
+</div>
+
+<body>
+<div style = "margin-left:200px; padding: 25px">
+<h1 style = "text-align: center; 
+color : green; font-size:40px""> Le Congiunzioni </h1>
+
+<div class: "audio"; style="text-align: right;margin : 30px"> 
+
+<p><i> Impara Le congiunzioni in 30 secondi"!</i></p>
+<audio src= "C:\Users\Odoo\Documents\sito\artdet.mp4" controls > This audio is great </audio>
+</div>
+<div style= "font-style:inherit; margin: 50px; padding: 25px;font-size:25px";>
+<p>
+Le congiunzioni sono parti invariabili del discorso usate per collegare tra loro due elementi all’interno di una ➔proposizione oppure due o più proposizioni all’interno di un ➔periodo
+<p>
+<i>Anna e Marco giocano 
+
+Anna vorrebbe <b>che</b> Marco giocasse con lei </i>
+
+<p>Le congiunzioni possono essere:</p>
+
+Se le <strong>classifichiamo in base alla forma</strong>, le congiunzioni si suddividono in:</p>
+<ul class="spip"><li><strong> semplici:</strong> ovvero composte da una sola parola come: <i>e, o, ma, pure, mentre, come, che, se, anzi, cioè, però, eppure, neppure</i></li><li> <strong>composte</strong>: se derivano dalla fusione di più parole come:<i> affinché (a + fine + che), oppure (o + pure), perché (per + che), poiché (poi + che), appena (a + pena), anche (a + che), non</i></li><li> <strong>locuzioni congiuntive</strong>: se formate da gruppi di due o tre parole: <i>anche se, dal momento che, ogni volta che</i></li></ul>
+<p>Se invece classifichiamo le congiunzioni <strong>in base alla funzione</strong>, allora dobbiamo distinguerle in <strong>coordinanti e subordinanti.</strong><br class='autobr' />
+Le prime collegano parole o proposizioni che si trovano <strong>sullo stesso piano logico</strong> e che sono sintatticamente omogenee. Le seconde collegano due proposizioni <strong>mettendole su piani diversi</strong>: una proposizione principale, che regge il periodo, e una proposizione subordinata, che completa il significato della principale, ma ne dipende e non dà informazione senza di essa.</p>
+<p><strong>Le congiunzioni coordinanti</strong> sono:</p>
+<ul class="spip"><li> <strong>copulative positive</strong>: collegano due elementi come <i>e, anche, pure, inoltre, ancora, perfino, altresì</i></li><li> <strong>copulative negative</strong>: <i>né, neanche, neppure, nemmeno</i></li><li> <strong>disgiuntive</strong>: uniscono due parole mettendole in alternativa escludendone una come <i>o, oppure, altrimenti, ovvero, ossia</i></li><li> <strong>avversative</strong>: introducono un&#8217;opposizione come<i> ma, tuttavia, però, pure, eppure, anzi, sì, nonostante, nondimeno, bensì, piuttosto, invece, mentre, se non che, al contrario, per altro, ciò nonostante</i></li><li> <strong>conclusive</strong>: introducono una conclusione come <i>dunque, perciò, quindi, pertanto, allora, per cui, cosicché, inoltre, eppure, insomma, così, onde, sicché</i></li><li> <strong>dichiarative o esplicative</strong>: introducono una spiegazione collegata a un&#8217;affermazione che le precede come <i>infatti, difatti, invero, cioè, ossia, ovvero, vale a dire, in effetti, effettivamente, in realtà</i></li><li> <strong>correlative</strong>: si usano in coppia tra due proposizioni e mettono in corrispondenza due elementi:<i> e... e, o... o, né... né, sia... sia, non solo... ma anche, ora... ora, tanto... quanto, tale... quale, così... come, come... così, sia che... sia che. </i></li></ul>
+<p><strong>Le congiunzioni subordinanti</strong> sono:</p>
+<ul class="spip"><li> <strong>causali</strong>: introducono una subordinata causale e spiegano una causa. Sono: <i>siccome, poiché, perché, in quanto che, giacché, dacché, dal momento che, per via che, visto che, dato che, come </i></li><li> <strong>finali</strong>: comunicano un fine, uno scopo. Sono: <i>affinché, perché, acciocché</i></li><li> <strong>consecutive</strong>: esprimono una conseguenza dell&#8217;avvenimento principale. Sono: <i>che,cosicché, tanto che, in modo che, così... che, tanto... che</i></li><li> <strong>temporali</strong>: introducono un&#8217;informazione di tipo temporale. Sono:<i> quando, finché, fin quando, fintantoché, da, da che, da quando, dopo che, prima che, intanto che, (non) appena, ogni qual volta, ogni volta che, ora che, mentre</i></li><li> <strong>concessive:</strong> esprimono una concessione al verificarsi della principale. Sono: <i>anche se, anche quando, qualora, nonostante, benché, sebbene, quantunque</i></li><li> <strong>dichiarative o esplicative</strong>: introducono chiarimenti o spiegazioni. Sono: <i>che, come, infatti, cioè, ossia</i></li><li> <strong>condizionali</strong>: esprimono una condizione. Sono: <i>se, qualora, purché, a condizione che, a patto che, laddove</i></li><li> <strong>modali:</strong> esprimono un modo. Sono: <i>come, come se, nel modo che</i></li><li> <strong>avversative</strong>: esprimono contrapposizione. Sono: <i>mentre, quando</i></li><li> <strong>eccettuative, esclusive, limitative</strong>. Sono:<i> tranne che, fuorché, eccetto che, salvo che, a meno che, senza che, per quello che</i></li><li> <strong>interrogative dirette</strong>: <i>se, come, quando, quanto, perché</i></li><li> <strong>comparative</strong>: <i>come, così... come, più/meno... di come, più/meno... di quanto, più/meno/meglio/peggio... di quello [che], piuttosto che</i></li><li> <strong>relative</strong>: <i>come cui, dove, che, chi</i></li></ul><h2 class="spip">Congiunzioni: alcuni esempi </h2>
+<p>Vediamo alcuni esempi per capire come usarle, ricordando sempre che le congiunzioni servono a indicare il legame logico tra le varie parti del discorso.</p>
+<ul class="spip"><li> Io <i>e</i> mia sorella. (Congiunzione coordinante semplice positiva).</li><li> Puoi restare a cena <i>a meno che</i> tu non abbia già impegni. (Congiunzione subordinante limitativa).</li><li> Mangio <i>perché</i> ho fame. (Congiunzione subordinante causale).</li><li> Continui a perdere tempo <i>quando </i> dovresti studiare. (Congiunzione subordinante avversativa).</li><li> Vieni anche tu,<i> o</i> te ne pentirai! (Congiunzione coordinante disgiuntiva).</li><li> Ho studiato tanto, <i>infatti</i> ho preso 10. (Congiunzione coordinante dichiarativa).</li><li> <i>Non solo</i> prenderò il dolce, <i>ma anche</i> il gelato. (Congiunzione coordinante correlativa).</li><li> Non so <i>come</i> faccia a resistere. (Congiunzione subordinante interrogativa diretta).</li></ul>
+<p>La grammatica italiana è molto complessa, ma con un po&#8217; di studio tutto diventa comprensibile. Ci sono altri argomenti che vi mettono in difficoltà? Fatecelo sapere nei commenti, vi aspettiamo!</p></div>
+
+</p>
+</div>
+</body>
+
+</html>
